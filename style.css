@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/*Standart Abstände etc. zurücksetzten*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+/*Form */
+form {
+    width: 300px;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #fff;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #fff;
+}
+
+select {
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+}
+/*body*/
+/*body*/
+body{
+  min-height: 110vh;
+  background: url('wolke.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #f3f3f3;
+  position: relative;
+  filter: grayscale(10%);
+  -webkit-filter: grayscale(10%);
+}
+/*home page*/x
+.text-homepage{
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 100px;
+  padding-top: 5%;
+}
+
+.text-homepage2{
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.text-homepage3{
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-top: 30px;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+  z-index: 100;
+}
+/*Designe Logo*/
+.logo{
+  font-size: 32px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+/*Designe Navigation */
+.navMenu a{
+  position: relative;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+/* 
+  Dieser Block definiert ein Pseudoelement ::before für alle Links in der .navMenu Klasse.
+  Das Pseudoelement hat eine absolute Position und erscheint am unteren Rand des Links (top: 100%).
+  Es erstreckt sich über die volle Breite des Links (width: 100%) und hat eine Höhe von 2px.
+  Die Hintergrundfarbe ist weiß (background: #fff).
+  Bei Änderungen wird eine Übergangsanimation mit einer Dauer von 0.3 Sekunden angewendet (transition: .3s).
+*/
+.navMenu a::before{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transition: .3s;
+}
+/* Hover Effekt*/
+.navMenu a:hover::before{
+  transition: .3s;
+  width: 100%; 
+}
+
+.navMenu a:hover {
+  color: #ffffff; /* Beispiel: Setzt die Farbe beim Hover auf Gold (oder jede gewünschte Farbe) */
+  text-decoration: underline; /* Optional: Fügt eine Unterstreichung hinzu */
+}
+
+.form-class-name {
+  margin-top: 2%; /* Ersetzen Sie 100px durch die tatsächliche Höhe Ihrer Navigation */
+}
+
+/* Über Uns Seite */
+
+.uberuns{
+  text-align: center;
+color: #fff;
+font-weight: bold;
+padding-top: 5%;
+}
+
+.uberunstext{
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-top: 5px;
+  font-size: 20px;
+  
+}
+.kntform{
+  text-align: center;
+  color: #fff;
+  font-size: 15px; 
+  padding-top: 3%;
+}
+
+/*Benutzer Delete Seite*/
+.abschied {
+  text-align: center;
+  padding-top: 150px;
+  color: #fff;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  clear: both;
+  width: 100%;
+  padding: 15px 100px;
+  background-color:#487faf;
+  justify-content: space-between ;
+  align-items: center;
+  z-index: 100;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  height: 100px;
+  
+}
+
+.footer a{
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.gesamtpreis {
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+}
+
+.serverfull {
+  text-align: center;
+  color: red;
+  font-weight: 500;
+}
+
+.Angebot{
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  padding-top: 5%;
+}
+
+.AngebotText{
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5px;
+  font-size: 20px; 
+} 
